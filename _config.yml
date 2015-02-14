@@ -1,14 +1,17 @@
 menu:
-  Home: /
-  Archives: /archives
+  首页: /
+  归档: /archives
+  关于: /about
+subtitle: Collect the dots in your life.
 
 widgets:
 - search
 - tagcloud
 - recent_posts
 - tag
+- blogroll
 
-excerpt_link: Read More
+excerpt_link: 阅读全文
 
 twitter:
   username:
@@ -24,3 +27,9 @@ addthis:
   pinterest: true
 
 fancybox: true
+
+rss: /atom.xml
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20

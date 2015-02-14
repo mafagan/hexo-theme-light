@@ -2,7 +2,7 @@ icon-size = 32px
 icon-gap = 25px
 
 article
-  box-shadow 1px 2px 3px #ddd
+  box-shadow: 0 1px 2px #BBB
   background #fff
   &.page
     padding-left 20px
@@ -39,6 +39,45 @@ article
     position relative
     @media screen and (max-width: 600px)
       padding-left 20px
+
+  .post-content:before
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    height: 20%;
+    -webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.7);
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+
+  .post-content:after
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    height: 20%;
+    -webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.7);
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+    right: 10px;
+    left: auto;
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    transform: rotate(2deg);
+
 
   .gallery
     overflow hidden
@@ -101,9 +140,9 @@ article
         display none
       &:before
         position absolute
-        font 32px font-icon    
+        font 32px font-icon
         top 0
-        left 0 
+        left 0
         width 32px
         text-align center
 
@@ -152,12 +191,11 @@ article
       font-family font-mono
 
     code
-      background #eee
-      color #666
+      background #FBEDEB
+      color #E2678F
       padding 0 5px
       margin 0 2px
       font-size 0.9em
-      border 1px solid color-border
       border-radius 3px
 
     pre
@@ -170,6 +208,7 @@ article
       code
         background none
         padding 0
+        color rgb(102, 102, 102)
         margin 0
         border none
         border-radius 0
@@ -180,13 +219,12 @@ article
         margin-top 0
 
     h1, h2
-      font-weight normal
-      border-bottom 1px solid color-border
+      font-weight bold
       padding-bottom 10px
       margin-top 20px
 
     h3, h4, h5, h6
-      font-weight normal
+      font-weight bold
 
     img, video
       max-width 100%
