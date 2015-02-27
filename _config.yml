@@ -28,4 +28,6 @@ addthis:
 
 fancybox: true
 
+google_analytics: UA-60178099-1
+
 rss: /atom.xml
